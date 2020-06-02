@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blood | India</title>
+        <meta charset="UTF-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="">
+        <meta name="keywords" content="blood,india,bloodgroup,donate,donateblood">
+
+        <!-- Main script file -->
+        <script src="script.js"></script>
+
+        <!-- Main style sheet file -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <div class="logo">
+                <img src="pics/blood.png" alt="" height="100%">
+            </div>
+        </section>
+
+        <section id="slideshow">
+            blah blah 
+        </section>
+
+        <section id="search">
+            <div class="container">
+                <div class="row" style="padding-top: 20px; padding-bottom: 20px; ">
+                    <div class="col-30">
+                        <form method=POST action="search.php" onsubmit="framesize();" target="search-results">
+                            <label for="bgroup">Select Blood group</label>
+                            <select name="bgroup" id="bgroup" required>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                
+                            <label for="city">Select City</label>
+                            <select name="city" id="city" required>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="hyderabad">Hyderabad</option>
+                            </select>
+
+                            <input type="submit" value="Search">
+
+                        </form>
+                    </div>
+
+                    <div class="col-70">
+                        <iframe id="search-results" name="search-results" src="" frameborder="0" width="100%" height="0"> 
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-50" style="color: white; padding: 50px 10px;">
+                        <h1>Be a hero.</h1>
+                        <h3>A real one.</h3>
+                        <h5>Register and become a <br>certified blood donor.</h5>
+
+                    </div>
+
+                    <div class="col-50">
+                        <form method=POST action="reg.php" style="color: white;">
+                            <label for="dname">Name</label>
+                            <input type="text" id="dname" name="firstname" placeholder="Your name.." required>
+
+                            <label for="age">Age</label>
+                            <input type="text" id="age" name="age" placeholder="Your age.." required>
+
+                            <label for="bl_group">Blood Group</label>
+                            <select name="bl_group" id="bl_group" required>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+
+                            <label for="addr">Address</label>
+                            <textarea name="address" id="addr" placeholder="Your address.." style="height: 200px;" required></textarea>
+
+                            <label for="phno">Contact Number</label>
+                            <input type="text" id="phno" name="cnct_num" placeholder="Your contact number.." required>
+
+                            <input type="submit" value="Register">
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <br><br><br><br>
+
+
+        <section id="footer">
+            Without doubt my favorite part in a website 
+        </section>
+
+    </body>
+</html>

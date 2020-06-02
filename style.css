@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+}
+
+form {
+    padding : 10px;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    margin-bottom: 40px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+tr, th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    /* background-color: #800000; */
+    background-color: rgb(115, 190, 255);
+    /* color: #333; */
+    color: white;
+    padding: 15px;
+}
+
+#header {
+    background-color: #ffdedb;
+    height : 69px;
+    width : 100%;
+    margin : 0;
+    vertical-align: middle;
+    line-height: 69px;
+}
+
+#header .logo {
+    height: 69px;
+    width : 69px;
+    padding : 15px;
+}
+
+#slideshow {
+    background-color: #fe8176;
+    color : #a70f01;
+    height : 69px;
+    width : 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 69px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+#search {
+    background-color: white;
+    /* height: 70vh; */
+    width: 100%;
+
+    padding: 10px 10%;
+}
+
+#register {
+    background-color: #340d09;
+    /* height: 70vh; */
+    width: 100%;
+
+    padding: 10px 10%;
+}
+
+#register h1 {
+    font-size: 7vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#register h3 {
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#register h5 {
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    #register h1 {
+        font-size: 14vw;
+    }
+
+    #register h3 {
+        font-size: 12vw;
+    }
+
+    #register h5 { 
+        font-size: 6vw;
+    }
+  }
+
+
+/* containers and columns */
+
+.container {
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-30 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    padding: 5px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding : 5px;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+    padding : 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-30, .col-50, .col-70, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+/* form tags */
+
+input[type=text], select, textarea {
+    width : 100%;
+    padding : 12px;
+    background-color: white;
+    outline: none;  /* to remove that default border */
+    border: 3px solid #ccc;
+    resize: vertical;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    border: 3px solid #fe7186;
+}
+
+textarea:focus {
+    border: 3px solid #fe7186;
+}
+
+select:focus {
+    border: 3px solid #fe7186;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color: #fe2712;
+    color: white;
+    width : 100%;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #a70f01;
+}
